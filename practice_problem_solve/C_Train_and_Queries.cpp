@@ -16,11 +16,9 @@ int main() {
         
         for (int i = 0; i < n; i++) {
             cin >> arr[i];
-            // Record the first occurrence if it's not already set
             if (first_occurrence.find(arr[i]) == first_occurrence.end()) {
                 first_occurrence[arr[i]] = i;
             }
-            // Always update the last occurrence
             last_occurrence[arr[i]] = i;
         }
         
