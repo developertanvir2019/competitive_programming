@@ -1,10 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-#define fast() ios_base::sync_with_stdio(0),cin.tie(0),cout.tie(0)
 
 int main() {
-    fast();
     int t;
     cin >> t;
     
@@ -22,6 +20,8 @@ int main() {
             last_occurrence[arr[i]] = i;
         }
         
+
+
         // Step 2: Process each query
         while (k--) {
             int a, b;
